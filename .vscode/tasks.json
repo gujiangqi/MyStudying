@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "command": "g++",
+    "args": [
+        "-g",
+       "-std=c++11",
+        "${file}",
+        "-o",
+        "D:\\02_Studying\\03_C++\\02_code\\build\\${fileBasenameNoExtension}.exe"
+    ],
+    "problemMatcher": {
+        "owner": "cpp",
+        "fileLocation": [
+            "relative",
+            "\\"
+        ],
+        "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "severity": 4,
+            "message": 5
+        }
+    },
+    "group": {
+        "kind": "build",
+        "isDefault": true
+    }
+}
