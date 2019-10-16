@@ -6,7 +6,7 @@
        "-std=c++11",
         "${file}",
         "-o",
-        "D:\\02_Studying\\03_C++\\02_code\\build\\${fileBasenameNoExtension}.exe"
+        "D:\\02_Studying\\05_GitHub\\CodeLearNing\\build\\${fileBasenameNoExtension}.exe"
     
     ],
     "problemMatcher": {
