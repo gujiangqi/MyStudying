@@ -8,21 +8,21 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "D:\\02_Studying\\05_GitHub\\CodeLearNing\\build\\${fileBasenameNoExtension}.exe",
+            "program": "D:\\02_Studying\\05_GitHub\\MyStudying/build/${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
+            "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "gdb32.exe",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
             "preLaunchTask": "g++",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
-                }
+                },
             ]
         }
     ]
