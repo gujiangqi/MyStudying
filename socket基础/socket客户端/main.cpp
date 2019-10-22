@@ -44,7 +44,7 @@ int main()
 	// ¹Ø±Õ¶¯Ì¬¿â
 
 	WSACleanup();
-
+	system("pause");
 	return 0;
 
 
