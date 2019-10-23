@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+#define _WINSOCK_DEPRECATED_NO_WARNINGS
 #include "stdafx.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -31,16 +33,16 @@ int main()
 		cout << "载入socket库失败" << endl;
 		return 0;
 	}
-
+	
 	// 创建一个socket
 	// AF:address family   
 	// INET：ipv4
 	// 不指定协议的话，就初始化为0；
 	sockSer = socket(AF_INET, SOCK_STREAM, 0);
-
+	
 	// 初始化地址：sockAddr_in是一个结构体，里面包含好几个参数
 	// inet_addr 是将网络地址转化成网络字节序二进制
-	addrSer.sin_addr.S_un.S_addr = inet_addr("192.168.0.106");
+	addrSer.sin_addr.S_un.S_addr = inet_addr("172.20.10.4");
 	addrSer.sin_family = AF_INET;
 
 	// 1024以上的可以随便写
