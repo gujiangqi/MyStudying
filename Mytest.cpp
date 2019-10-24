@@ -39,22 +39,3 @@
 //     system("pause");
 //     return 0;
 // }
-#include <iostream>
-#include <cstdlib>
-using namespace std;
-struct teacher
-{
-    int data;
-};
-int main(int argc, char const *argv[])
-{
-    teacher *p;
-    p = (teacher *)malloc(sizeof(teacher) * 2);
-
-    system("pause");
-    return 0;
-}
-void create(teacher ** p)
-{
-    (*p)->
-}
