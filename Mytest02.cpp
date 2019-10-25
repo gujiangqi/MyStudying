@@ -24,7 +24,6 @@ void Createlist_L(LinkList *L, int n)
         cin >> P->data; //输入元素值
         P->next = L->next;
         L->next = P;
-        scanf
     }
 }
 

@@ -3,7 +3,8 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "D:\\02_Studying\\02_C++\\LinuxInclude"
             ],
             "defines": [
                 "_DEBUG",

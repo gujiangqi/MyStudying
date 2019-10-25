@@ -51,7 +51,8 @@
         "functional": "cpp",
         "numeric": "cpp",
         "iterator": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "*.tcc": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "files.autoGuessEncoding": true,
