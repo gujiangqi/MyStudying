@@ -1,38 +1,44 @@
-#include "io.h"
-#include <fcntl.h>
-
-#include <errno.h>
-#include <stdlib.h>
-#include <string.h>
+ï»¿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <errno.h>
 
-int main(int argc, char* argv[])
+#include <string.h>
+
+int main()
+
 {
-	if (argc != 3) {
-		fprintf(stderr, "usage:%s srcfilename destfile\n", argv[0]);
-		exit(1);
+
+	char szTest[1000] = { 0 };
+
+	int len = 0;
+
+	FILE* fp = fopen("C:\\Users\\gujiangqi\\Desktop\\test.txt", "r");
+
+	if (NULL == fp)
+
+	{
+
+		printf("failed to open dos.txt\n");
+
+		return 1;
 
 	}
-	int fdin, fdout;
-	fdin = open(argv[1], O_RDONLY);
-	if (fdin < 0) {
-		fprintf(stderr, "open error:%s\n", strerror(errno));
-		exit(1);
+
+	while (!feof(fp))
+
+	{
+
+		memset(szTest, 0, sizeof(szTest));
+
+		fgets(szTest, sizeof(szTest) - 1, fp); // åŒ…å«äº†æ¢è¡Œç¬¦ Â Â Â Â Â Â Â Â Â 
+
+		printf("%s", szTest);
+
 	}
-	else {
-		printf("open file:%d\n", fdin);
-	}
-	//´ò¿ªÒ»¸ö´ýÐ´ÈëµÄÎÄ¼þ
-	fdout = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0777);
-	if (fdout < 0) {
-		fprintf(stderr, "open error:%s\n", strerror(errno));
-		exit(1);
-	}
-	else {
-		printf("open file:%d\n", fdout);
-	}
-	close(fdin);
-	close(fdout);
-	return 0
+
+	fclose(fp);
+
+	printf("\n");
+
+	return 0;
+
 }

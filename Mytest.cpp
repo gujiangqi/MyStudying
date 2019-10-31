@@ -39,3 +39,28 @@
 //     system("pause");
 //     return 0;
 // }
+
+#include <iostream>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include <cstdlib>
+#include <string>
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    string str = "[hello]";
+    if (str.find("=", 0) != string::npos)
+    {
+        cout << str << endl;
+        printf("find success!");
+    }
+    else
+    {
+        cout << " no find " << endl;
+    }
+
+    system("pause");
+    return 0;
+}
