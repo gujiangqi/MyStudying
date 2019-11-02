@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <iostream>
 #include <malloc.h>
-#include <WinSock2.h>
+#include <string>
+#include <map>
+#include <queue>
 typedef struct node
 {
     int data;
@@ -53,6 +55,7 @@ void print(lnode head)
 }
 int main()
 {
+    map<string> myMap;
     int n;
     lnode head;
     creastlist(head);
