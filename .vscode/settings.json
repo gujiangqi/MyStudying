@@ -71,7 +71,11 @@
         "*.ipp": "cpp",
         "cfenv": "cpp",
         "cinttypes": "cpp",
-        "hashtable": "cpp"
+        "hashtable": "cpp",
+        "array": "cpp",
+        "optional": "cpp",
+        "bit": "cpp",
+        "string_view": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled",
     "files.autoGuessEncoding": true,

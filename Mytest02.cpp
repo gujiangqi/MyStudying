@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <iostream>
+#include <map>
+#include <string>
 using namespace std;
 typedef int Status;
 typedef int ElemType;
@@ -12,7 +14,7 @@ typedef struct Lnode
 
 void Createlist_L(LinkList *L, int n)
 {
-
+    
     L = (LinkList *)malloc(sizeof(LinkList));
     L->next = NULL;
     printf("pls input data:\n");
