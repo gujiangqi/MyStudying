@@ -3,6 +3,7 @@
 #include <iostream>
 #include <malloc.h>
 #include <string>
+#include <string.h>
 #include <map>
 #include <queue>
 typedef struct node
@@ -55,6 +56,7 @@ void print(lnode head)
 }
 int main()
 {
+    string 
     map<string> myMap;
     int n;
     lnode head;

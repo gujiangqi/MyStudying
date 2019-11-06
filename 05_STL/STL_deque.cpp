@@ -2,6 +2,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <algorithm>
+#include <string.h>
 using namespace std;
 
 int main()
@@ -24,7 +25,7 @@ int main()
         cout << *it << " ";
     }
     cout << endl;
-
+    
     cout << dq.front() << endl;
     cout << dq.back() << endl;
     system("pause");
