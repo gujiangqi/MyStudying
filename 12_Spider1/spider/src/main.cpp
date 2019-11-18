@@ -1,6 +1,6 @@
 /* main programme */
 
-#include <spiderApp.h>
+#include "spiderApp.h"
 #include <spider.h>
 
 int main(int argc, char* argv[])

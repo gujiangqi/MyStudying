@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<system name="IES" type="REQUEST" dateTime="2019-05-28 11:00:00">
+		<check value="9284e2494b22f5ad375bb8385e4"	/>
+		
+		<1s_15min startTime="2019-05-28 11:05:00">
+				<res_up   value="80" holdTime="100" price="78.9" />
+				<res_down value="70" holdTime="120" price="98.7" />	
+		</1s_15min>			
+		
+		<15min_30min startTime="2019-05-28 11:05:00">
+				<res_up   value="80" holdTime="100" price="78.9" />
+				<res_down value="70" holdTime="120" price="98.7" />	
+		</15min_30min>			
+		
+		<30min_2h startTime="2019-05-28 11:05:00">
+				<res_up   value="80" holdTime="100" price="78.9" />
+				<res_down value="70" holdTime="120" price="98.7" />	
+		</30min_2h>	
+		
+		<2h_more startTime="2019-05-28 11:05:00">
+				<res_up   value="80" holdTime="100" price="78.9" />
+				<res_down value="70" holdTime="120" price="98.7" />	
+		</2h_more>		
+		
+		<one_day_ago>
+				<connect name="并网点1">
+						<node dateTime="20190529 00:00:00" value="23" />
+						<node dateTime="20190529 00:05:00" value="23" />
+						<node dateTime="20190529 00:10:00" value="23" />
+						...
+						<node dateTime="20190529 23:55:00" value="23">
+				</connect>
+
+				<connect name="并网点2">
+						<node dateTime="20190529 00:00:00" value="23" />
+						<node dateTime="20190529 00:05:00" value="23" />
+						<node dateTime="20190529 00:10:00" value="23" />
+						...
+						<node dateTime="20190529 23:55:00" value="23">
+				</connect>				
+		</one_day_ago>		
+</system>

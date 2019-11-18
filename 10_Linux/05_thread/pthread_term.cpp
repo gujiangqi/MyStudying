@@ -4,6 +4,9 @@
 #include <stdio.h>
 #include <cstdlib>
 #include <pthread.h>
+#include <map>
+#include <string>
+
 using namespace std;
 struct Arg
 {
@@ -17,6 +20,7 @@ void *th_fn(void *arg)
 }
 int main(int argc, char *argv[])
 {
+    string str;
     int err;
     pthread_t th;
     Arg r = {20, 50};
