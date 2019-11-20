@@ -47,6 +47,7 @@ private:
     modify_client_base*  m_model_client;
     message_invocation   m_messageBus;
     Message              m_msg_rec;
+    
 
     CTableOp*  m_devTableOp;
     CTableNet*  m_transTableNet;

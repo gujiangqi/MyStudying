@@ -21,6 +21,8 @@
 #include "message_type.h"
 #include "message_channel.h"
 #include "isca_ctrl_trans_m.h"
+#include "string.h"
+#include <time.h>
 
 using namespace std;
 using namespace NET_ODB;

@@ -1,5 +1,5 @@
 //单个类的访问控制
-
+#include <stdio.h>
 #include <iostream>
 using namespace std;
 //public 修饰的成员变量 方法 在类的内部 类的外部都能使用

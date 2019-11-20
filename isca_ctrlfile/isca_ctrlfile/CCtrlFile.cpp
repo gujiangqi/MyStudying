@@ -625,6 +625,7 @@ void CCtrlFile::getInfoFromFileName(QString &fileName)
     return;
 }
 
+
 void CCtrlFile::getTimeFromDomText(char *domText, time_t &start_time)
 {
 

@@ -3,15 +3,11 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += main.cpp \
-    spiderApp.cpp \
-    confparser.cpp \
-    spider_include.cpp
+SOURCES += \
+    spider.cpp \
+    confparser.cpp
 
 HEADERS += \
-    confparser.h \
-    spiderApp.h \
-    spider_include.h \
-    Url.h \
-    UrlManager.h
+    spider.h \
+    confparser.h
 

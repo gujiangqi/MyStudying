@@ -6,7 +6,7 @@
 #include <string>
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "spider.h"
 #include "Url.h"
 using namespace std;
 

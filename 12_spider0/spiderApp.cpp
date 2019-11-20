@@ -1,6 +1,7 @@
 #include "spider.h"
 #include "spiderApp.h"
 #include "confparser.h"
+#include "pthread.h"
 SpiderApp::SpiderApp()
 {
 
@@ -18,11 +19,11 @@ int SpiderApp::initApp(int argc, char * argv[])
 
     }
     ConfigParser::instance()->loader(CONF_PATH);
-
     if(isDeamon() == 0)
     {
         this->deamon();
     }
+
 
     // load lib
     // wait complete
